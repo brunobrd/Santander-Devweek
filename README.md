@@ -30,8 +30,8 @@ classDiagram
         - String description
     }
 
-    Customer "1" --> "1" Account
-    Customer "1" --> "0..*" Feature
-    Customer "1" --> "1" Card
-    Customer "1" --> "0..*" News
+    Customer "1" *-- "1" Account
+    Customer "1" *-- "1..*" Feature
+    Customer "1" *-- "1" Card
+    Customer "1" *-- "1..*" News
 ```
